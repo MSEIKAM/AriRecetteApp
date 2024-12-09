@@ -1,0 +1,22 @@
+-- Insérer des données d'exemple dans la table Recipe
+INSERT INTO recipe (title, description, instructions) VALUES
+('Spaghetti Bolognaise', 'Un plat italien classique de pâtes avec une sauce à la viande riche à base de tomates.', 
+'1. Faites cuire les spaghettis selon les instructions sur l''emballage.<br>2. Dans une poêle, faites revenir les oignons et l''ail, puis ajoutez la viande hachée.<br>3. Ajoutez la pâte de tomates, les tomates concassées et les épices.<br>4. Laissez mijoter pendant 20 minutes et servez sur les spaghettis.'),
+('Pancakes', 'Des pancakes légers et moelleux, parfaits pour le petit déjeuner.', 
+'1. Mélangez la farine, le sucre, la levure chimique et une pincée de sel dans un bol.<br>2. Ajoutez le lait, les œufs et le beurre fondu ; fouettez jusqu''à obtenir une pâte lisse.<br>3. Chauffez une poêle et versez de la pâte pour former des pancakes.<br>4. Faites cuire jusqu''à ce que des bulles apparaissent, retournez et faites cuire l''autre côté.'),
+('Curry de Poulet', 'Un curry savoureux avec des morceaux de poulet tendre dans une sauce épicée.', 
+'1. Faites mariner le poulet avec des épices et du yaourt pendant 30 minutes.<br>2. Faites revenir les oignons, l''ail et le gingembre ; ajoutez des tomates et laissez cuire jusqu''à ce qu''elles soient tendres.<br>3. Ajoutez le poulet mariné et laissez mijoter jusqu''à ce qu''il soit bien cuit.<br>4. Servez avec du riz ou du naan.'),
+('Sauté de Légumes', 'Un plat rapide et sain avec des légumes mélangés et une sauce savoureuse.', 
+'1. Chauffez de l''huile dans une poêle ou un wok.<br>2. Ajoutez l''ail, le gingembre et des légumes mélangés (ex : brocoli, carottes, poivrons).<br>3. Faites sauter jusqu''à ce qu''ils soient tendres.<br>4. Ajoutez de la sauce soja, de la sauce d''huître et un mélange d''eau et de fécule de maïs.<br>5. Faites cuire 2 minutes et servez avec du riz.'),
+('Tacos de Bœuf', 'De délicieux tacos avec du bœuf haché assaisonné et des garnitures fraîches.', 
+'1. Faites cuire le bœuf haché avec un mélange d''épices pour tacos.<br>2. Chauffez les coquilles de tacos.<br>3. Remplissez chaque coquille avec du bœuf, de la laitue, du fromage et de la salsa.<br>4. Ajoutez de la crème fraîche et du guacamole pour plus de saveur.'),
+('Salade César', 'Une salade classique avec de la laitue romaine, des croûtons et une sauce César.', 
+'1. Mélangez la laitue romaine coupée avec la sauce César.<br>2. Ajoutez des croûtons et du Parmesan râpé.<br>3. Optionnellement, ajoutez du poulet grillé pour une version plus copieuse.<br>4. Servez frais.'),
+('Gâteau au Chocolat', 'Un gâteau au chocolat riche et moelleux avec un glaçage crémeux.', 
+'1. Mélangez la farine, le sucre, le cacao en poudre, le bicarbonate de soude et le sel.<br>2. Ajoutez les œufs, le lait, l''huile et la vanille ; mélangez bien.<br>3. Faites cuire dans un four préchauffé à 180°C (350°F) pendant 30 minutes.<br>4. Garnissez de ganache au chocolat ou de crème au beurre.'),
+('Pizza Margherita', 'Une pizza classique avec une pâte fine, une sauce tomate fraîche, de la mozzarella et du basilic.', 
+'1. Étalez la pâte à pizza en une fine croûte.<br>2. Étalez la sauce tomate et ajoutez des tranches de mozzarella.<br>3. Faites cuire dans un four chaud jusqu''à ce que le fromage fonde.<br>4. Garnissez de feuilles de basilic frais.'),
+('Soupe de Tomates', 'Une soupe réconfortante faite avec des tomates mûres et des herbes fraîches.', 
+'1. Faites revenir des oignons et de l''ail dans une casserole.<br>2. Ajoutez des tomates coupées, du bouillon de légumes et des épices.<br>3. Laissez mijoter jusqu''à ce que les tomates soient tendres.<br>4. Mixez jusqu''à obtenir une texture lisse et servez chaud.'),
+('Riz Frit aux Crevettes', 'Un riz frit rapide et savoureux avec des crevettes et des légumes.', 
+'1. Chauffez de l''huile dans un wok ou une poêle.<br>2. Faites sauter les crevettes jusqu''à ce qu''elles soient roses et mettez-les de côté.<br>3. Faites cuire des légumes mélangés avec de l''ail.<br>4. Ajoutez du riz cuit, de la sauce soja et les crevettes.<br>5. Faites sauter jusqu''à ce que tout soit bien chaud.');

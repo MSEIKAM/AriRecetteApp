@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ recipe.title }}{% endblock %}
+
+{% block body %}
+{% if app.user %}
+    <div class="mb-3">
+        <a href="{{ path('recipe_list') }}">Retour</a>
+    </div>
+{% endif %}
+
+    <h1>{{ recipe.title }}</h1>
+    <p>{{ recipe.description }}</p>
+    <h2>Instructions</h2>
+    <p>{{ recipe.instructions | raw }}</p>
+
+    <h3>Average Rating: {{ averageRating ? averageRating|number_format(1) : 'No ratings yet' }}</h3>
+
+    <h2>Leave a Review</h2>
+    {% if app.user %}
+        {{ form_start(reviewForm) }}
+            {{ form_row(reviewForm.rating) }}
+            {{ form_row(reviewForm.content) }}
+            <button class="btn btn-primary">Submit</button>
+        {{ form_end(reviewForm) }}
+    {% else %}
+        <p><a href="{{ path('app_login') }}">Log in</a> to leave a review.</p>
+    {% endif %}
+
+    {% for message in app.flashes('success') %}
+        <div class="alert alert-success">{{ message }}</div>
+    {% endfor %}
+
+    <h2>Reviews</h2>
+    {% if reviews|length > 0 %}
+        {% for review in reviews %}
+            <div>
+                <strong>{{ review.user.username }}</strong> rated {{ review.rating }}/5
+                <p>{{ review.content }}</p>
+                <small>Posted on: {{ review.createdAt|date('Y-m-d H:i:s') }}</small>
+                <p>-----------------------------------------------------------------</p>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>No reviews yet. Be the first to leave one!</p>
+    {% endif %}
+{% endblock %}
